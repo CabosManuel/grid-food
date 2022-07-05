@@ -1,5 +1,8 @@
 :root {
   --space-base: 30px;
+  --orange: rgba(225,116,48,1);
+  --light-orange: rgb(255, 186, 137);
+  --green: #1cc8ae;
 }
 
 * {
@@ -49,7 +52,7 @@ main {
   font: inherit;
   
   color: white;
-  background: linear-gradient(180deg, rgb(250, 172, 116) 25%, rgba(225,116,48,1) 100%);
+  background: linear-gradient(180deg, var(--light-orange) 25%, var(--orange) 100%);
   
   border: none;
   border-radius: var(--space-base);
