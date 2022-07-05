@@ -3,6 +3,7 @@
   --orange: rgba(225,116,48,1);
   --light-orange: rgb(255, 186, 137);
   --green: #21e0c4;
+  --dark-green: #20bbd2;
   --dark-blue: #0f396a;
 }
 
@@ -144,6 +145,20 @@ main {
   top: 10px;
   color: var(--green);
   cursor: pointer;
+  filter: drop-shadow(0px 3px 2px rgb(0 0 0 / 0.4));
+}
+
+.fa-heart::after {
+  content: '';
+  z-index: -1;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+}
+
+.fa-heart:active {
+  top: 12px;
+  filter: none;
 }
 
 .orange {
