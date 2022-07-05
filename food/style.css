@@ -156,6 +156,7 @@ main {
   }
 
   .description .info {
+    margin-left: 0;
     margin-right: 0;
   }
 
@@ -181,5 +182,26 @@ main {
   .fa-heart {
     right: 8px;
     top: 8px;
+  }
+}
+
+@media screen and (max-width: 320px) {
+  .description h1 {
+    font-size: 3.6rem;
+    line-height: 3.6rem;
+  }
+
+  .info {
+    width: 200px;
+  }
+
+  .dishes {
+    grid-template-columns: repeat(auto-fit, minmax(75px, 100px));
+    gap: calc(var(--space-base) / 2);
+  }
+
+  .menus {
+    grid-template-columns: repeat(auto-fit, minmax(90px, 160px));
+    gap: calc(var(--space-base) / 2);
   }
 }
